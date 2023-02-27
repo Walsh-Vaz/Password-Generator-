@@ -1,4 +1,10 @@
 // Assignment code here
+/*
+Citations
+
+https://dev.to/code_mystery/random-password-generator-using-javascript-6a
+*/
+
 
 function generatePassword() {
   //user inputs for the password
