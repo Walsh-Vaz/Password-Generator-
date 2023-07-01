@@ -44,34 +44,40 @@ function generatePassword() {
   }
 
   if ((pwLength >= 8 && pwLength <= 128) && (pwLowCase === "Y") && (pwNumeric === "Y") && (pwUpperCase === "Y") && (pwSpecialChars === "Y")){
-    alert(password);
+    //alert(password);
+    return password;
   }
 
   else if ((pwLength >= 8 && pwLength <= 128) && (pwLowCase === "Y") && (pwNumeric === "N") && (pwUpperCase === "Y") && (pwSpecialChars === "Y")){
-    alert(noNumPassword);
+    //alert(noNumPassword);
+    return noNumPassword;
   }
 
   else if ((pwLength >= 8 && pwLength <= 128) && (pwLowCase === "N") && (pwNumeric === "Y") && (pwUpperCase === "Y") && (pwSpecialChars === "Y")){
     var allUpperCasePw = password.toUpperCase();
-    alert(allUpperCasePw);
+    //alert(allUpperCasePw);
+    return allUpperCasePw;
   }
 
   else if ((pwLength >= 8 && pwLength <= 128) && (pwLowCase === "Y") && (pwNumeric === "Y") && (pwUpperCase === "N") && (pwSpecialChars === "Y")){
     var allLowerCasePw = password.toLowerCase();
-    alert(allLowerCasePw);
+    //alert(allLowerCasePw);
+    return allLowerCasePw;
   }
 
   else if ((pwLength >= 8 && pwLength <= 128) && (pwLowCase === "Y") && (pwNumeric === "Y") && (pwUpperCase === "Y") && (pwSpecialChars === "N")){
-    alert(noSpecialCharPassword);
+    //alert(noSpecialCharPassword);
+    return noSpecialCharPassword;
   }
 
   else if ((pwLength >= 8 && pwLength <= 128) && (pwLowCase === "Y") && (pwNumeric === "N") && (pwUpperCase === "Y") && (pwSpecialChars === "N")){
-    alert(normalPw);
+    //alert(normalPw);
+    return normalPw;
   }
 
 
   else{
-    alert("Invalid inputs");
+    return "Invalid inputs";
   }
 }
 
